@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetElite - Premium Pet Foods</title>
+  <!-- Bootstrap CSS -->
+  <link rel='stylesheet' type='text/css' media='screen' href='bootstrap.min.css'>
+  <style>
+    body { font-family: 'Arial', sans-serif; padding-top: 70px; }
+    .hero {
+      background: url('cute-animals-group-white-background.jpg') no-repeat center center;
+      background-size: cover; color: white;text-align: center;
+    }
+    .hero h1 { font-size: 3rem; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.7); }
+    .hero p { font-size: 1.3rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.6); margin-bottom: 20px; }
+    .product-card img { height: 200px; object-fit: cover; }
+    .reviews .card { border: none; background-color: #f8f9fa; }
+    footer { background-color: #343a40; color: #fff; padding: 30px 0; text-align: center; }
+    .trans{
+      background-color: rgba(0, 0, 0, 0.463);
+       padding: 120px 0; 
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">PetElite</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+<div class="trans">
+  <div class="container">
+    <h1>Premium Pet Foods</h1>
+    <p>Nutritious, tasty, and made with love for your furry friends.</p>
+    <a href="#products" class="btn btn-primary btn-lg">Shop Now</a>
+  </div>
+</div>
+</section>
+
+<!-- Products Section -->
+<section id="products" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Our Products</h2>
+    
+    <div class="row g-4" id="product-grid">
+      <!-- Dog Food -->
+      <div class="col-md-4 product-item" data-category="dog">
+        <div class="card product-card">
+          <img src="beautiful-pet-portrait-dog-with-food.jpg" class="card-img-top" alt="Dog Food">
+          <div class="card-body">
+            <h5 class="card-title">Premium Dog Food</h5>
+            <p class="card-text">High-protein, natural ingredients, perfect for your canine companion.</p>
+            <a href="#" class="btn btn-primary w-100">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cat Food -->
+      <div class="col-md-4 product-item" data-category="cat">
+        <div class="card product-card">
+          <img src="close-up-adorable-pet-eating1.jpg" class="card-img-top" alt="Cat Food">
+          <div class="card-body">
+            <h5 class="card-title">Gourmet Cat Food</h5>
+            <p class="card-text">Delicious and nutritious meals to keep your cat healthy and happy.</p>
+            <a href="#" class="btn btn-primary w-100">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Small Pet Food -->
+      <div class="col-md-4 product-item" data-category="small">
+        <div class="card product-card">
+          <img src="various-breakfast-cereals-top-view.jpg" class="card-img-top" alt="Pet Snacks">
+          <div class="card-body">
+            <h5 class="card-title">Healthy Pet Snacks</h5>
+            <p class="card-text">Tasty treats for dogs, cats, and small pets, all made with care.</p>
+            <a href="#" class="btn btn-primary w-100">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features Section -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5">Why Choose Us?</h2>
+    <div class="row text-center g-4">
+      <div class="col-md-4">
+        <h4>High Quality Ingredients</h4>
+        <p>We use only natural and nutritious ingredients to keep pets healthy.</p>
+      </div>
+      <div class="col-md-4">
+        <h4>Veterinarian Approved</h4>
+        <p>Our products are approved by vets to ensure optimal pet health.</p>
+      </div>
+      <div class="col-md-4">
+        <h4>Fast Delivery</h4>
+        <p>Quick and safe delivery to your doorstep, so your pets never run out.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Reviews Section -->
+<section id="reviews" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Customer Reviews</h2>
+    <div class="row g-4 reviews">
+      <div class="col-md-4">
+        <div class="card p-3">
+          <p>"My dog loves this food! Healthy and tasty. Highly recommend."</p>
+          <h6>- Rajesh K.</h6>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-3">
+          <p>"The cat food is amazing. My cat can't get enough!"</p>
+          <h6>- Priya S.</h6>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-3">
+          <p>"Quick delivery and quality products. Will buy again for my pets."</p>
+          <h6>- Anil R.</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+ <!-- Contact Us Section -->
+<section id="contact" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5">Contact Us</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Write your message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2025 PetElite. All Rights Reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
